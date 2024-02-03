@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1086702185671",
+    "project_id": "stem-chatbot-a4ce9",
+    "storage_bucket": "stem-chatbot-a4ce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086702185671:android:f4b5d7b5060b1aaf8da2e2",
+        "android_client_info": {
+          "package_name": "com.cairouniversity.stemchatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-foin7q7OCbE7-VOCxbKdPZACYl_XfkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

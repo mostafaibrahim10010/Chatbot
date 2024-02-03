@@ -1,0 +1,1 @@
+String mainColor = "#004282";
