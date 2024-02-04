@@ -2,8 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:stemchatbot/Chat%20Screen/chatbot_screen.dart';
 import 'package:stemchatbot/Lo%20screens/Lo_screens.dart';
+import '../Chat Screen/Chatgpt/chatgpt_screen.dart';
 import '../UI Components/home_button.dart';
 import '../Utils/main_variables.dart';
 import 'contact_us.dart';
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: HexColor(mainColor),
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
-                builder: (BuildContext context) => const ChatScreen()));
+                builder: (BuildContext context) => const ChatPage()));
           },
           child: const Icon(Icons.chat, color: Colors.white,),
         ),
@@ -296,7 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const ChatScreen()));
+                    builder: (BuildContext context) => const ChatPage()));
               },
             ),
             ListTile(

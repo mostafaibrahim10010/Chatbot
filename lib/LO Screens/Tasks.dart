@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
-import '../Chat Screen/chatbot_screen.dart';
 import '../Utils/main_variables.dart';
 
 class OneTaskScreen extends StatefulWidget {

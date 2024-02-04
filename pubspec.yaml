@@ -36,14 +36,15 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   hexcolor: ^3.0.1
-  google_fonts: ^4.0.0
+  google_fonts: ^6.1.0
   firebase_core: ^2.15.0
   firebase_auth: ^4.7.2
   cloud_firestore: ^4.13.3
   firebase_database: ^10.2.4
   url_launcher: ^6.2.3
   rflutter_alert: ^2.0.7
-  dialog_flowtter: ^0.3.3
+  dash_chat_2: ^0.0.18
+  chat_gpt_sdk: ^2.2.5
 
 dev_dependencies:
   flutter_test:

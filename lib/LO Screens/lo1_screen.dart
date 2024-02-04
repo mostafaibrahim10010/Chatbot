@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:stemchatbot/Chat%20Screen/Chatgpt/chatgpt_screen.dart';
 import 'package:stemchatbot/Lo%20screens/Tasks.dart';
-import '../Chat Screen/chatbot_screen.dart';
 import '../Utils/main_variables.dart';
 
 class OneScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _OneScreenState extends State<OneScreen> {
           backgroundColor: HexColor(mainColor),
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
-                builder: (BuildContext context) => const ChatScreen()));
+                builder: (BuildContext context) => const ChatPage()));
           },
           child: const Icon(
             Icons.chat,
