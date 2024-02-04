@@ -159,12 +159,33 @@ class _LoginScreenState extends State<LoginScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const SizedBox(height: 10),
-                          Text(
-                            "Login",
-                            style: GoogleFonts.montserrat(
-                                color: HexColor(mainColor),
-                                fontSize: 35,
-                                fontWeight: FontWeight.bold),
+                          Row(
+                            children: [
+
+                              SizedBox(
+                                height: 80,
+                                width: 80,
+                                child: Image.asset("assets/Images/Cairo_University_Crest.png"),
+                              ),
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                              "Login",
+                              style: GoogleFonts.montserrat(
+                                  color: HexColor(mainColor),
+                                  fontSize: 35,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              SizedBox(
+                                height: 80,
+                                width: 80,
+                                child: Image.asset("assets/Images/G logo.png"),
+                              ),
+                            ]
                           ),
                           const SizedBox(height: 25),
                           Text(
