@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:stemchatbot/UI%20Components/lo_button.dart';
-
+import 'package:url_launcher/url_launcher.dart' as launcher;
 import '../../Utils/main_variables.dart';
 import 'lo2_tasks.dart';
 
@@ -36,7 +36,12 @@ class _Lo2ScreenState extends State<Lo2Screen> {
         width: 60,
         child: FloatingActionButton(
           backgroundColor: HexColor(mainColor),
-          onPressed: () {},
+          onPressed: () {
+            launcher.launchUrl(
+              Uri.parse("https://t.me/learning_outcome_2_bot"),
+              mode: launcher.LaunchMode.externalApplication,
+            );
+          },
           child: const Icon(Icons.chat, color: Colors.white,),
         ),
       ),

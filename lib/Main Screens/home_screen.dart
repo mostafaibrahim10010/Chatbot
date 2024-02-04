@@ -217,12 +217,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         HomeButton(
-                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
+                          title: "Keywords / Distributed", screen: HomeScreen(),),
                         SizedBox(
                           width: 10,
                         ),
                         HomeButton(
-                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
+                          title: "Menu / Distributed", screen: LoScreen(),),
                       ],
                     ),
                     SizedBox(
@@ -233,12 +233,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         HomeButton(
-                            title: "Menu / Distributed", screen: ChatGPTScreen(),),
+                            title: "Keywords / Focus", screen: ChatGPTScreen(),),
                         SizedBox(
                           width: 10,
                         ),
                         HomeButton(
-                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
+                          title: "Menu / Focus", screen: HomeScreen(),),
                       ],
                     ),
                   ],
