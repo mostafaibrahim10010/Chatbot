@@ -196,7 +196,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 fontWeight: FontWeight.bold),
                           ),
                           AuthTextField(controller: email, isPassword: false),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 29),
                           Text(
                             "Password",
                             style: GoogleFonts.montserrat(
