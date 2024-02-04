@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:stemchatbot/Lo%20screens/Lo_screens.dart';
+import 'package:stemchatbot/Lo%20screens/lo_main_screen.dart';
 import '../Chat Screen/Chatgpt/chatgpt_screen.dart';
 import '../UI Components/home_button.dart';
 import '../Utils/main_variables.dart';
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: HexColor(mainColor),
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
-                builder: (BuildContext context) => const ChatPage()));
+                builder: (BuildContext context) => const ChatGPTScreen()));
           },
           child: const Icon(Icons.chat, color: Colors.white,),
         ),
@@ -217,16 +217,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         HomeButton(
-                            iconPath: "assets/Images/Home/Location.png",
-                            title: "Keywords / Distributed",
-                            link: "https://maps.app.goo.gl/24jfacc44hPiiGVVA"),
+                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
                         SizedBox(
                           width: 10,
                         ),
                         HomeButton(
-                            iconPath: "assets/Images/Home/Chat.png",
-                            title: "Keywords / Focused",
-                            link: "https://poe.com/ChatGPT"),
+                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
                       ],
                     ),
                     SizedBox(
@@ -237,16 +233,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         HomeButton(
-                            iconPath: "assets/Images/Home/Email.png",
-                            title: "Menu / Distributed",
-                            link: "mailto:cucs.cad@gmail.com"),
+                            title: "Menu / Distributed", screen: ChatGPTScreen(),),
                         SizedBox(
                           width: 10,
                         ),
                         HomeButton(
-                            iconPath: "assets/Images/Home/Survey.png",
-                            title: "Menu / Focused",
-                            link: "https://forms.gle/2GRWHJXpUzJRdAJA7"),
+                          title: "Menu / Distributed", screen: ChatGPTScreen(),),
                       ],
                     ),
                   ],
@@ -296,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const ChatPage()));
+                    builder: (BuildContext context) => const ChatGPTScreen()));
               },
             ),
             ListTile(

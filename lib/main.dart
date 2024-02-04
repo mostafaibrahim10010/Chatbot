@@ -5,7 +5,6 @@ import 'package:stemchatbot/splash_screen.dart';
 import 'Authentication Screens/firebase_options.dart';
 
 
-
 void main() async{
 
   WidgetsFlutterBinding.ensureInitialized();

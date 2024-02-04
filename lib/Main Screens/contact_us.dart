@@ -32,15 +32,6 @@ class ContactUs extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const ContactContainer(
-                  imagePath: "assets/Images/Abdeltawab.jpg",
-                  name: "M. Abdeltawab",
-                  email: "m.abdultawab2006@gmail.com",
-                  phoneNumber: "0107200785",
-                  qrPath: "assets/Images/qr-code.png"),
-              const SizedBox(
-                height: 30,
-              ),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -62,11 +53,20 @@ class ContactUs extends StatelessWidget {
                     width: 150,
                     child: Image.asset("assets/Images/G logo.png"),
                   ),
-
-
                 ],
-              )
-
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const ContactContainer(
+                  imagePath: "assets/Images/Abdeltawab.jpg",
+                  name: "M. Abdeltawab",
+                  email: "m.abdultawab2006@gmail.com",
+                  phoneNumber: "0107200785",
+                  qrPath: "assets/Images/qr-code.png"),
+              const SizedBox(
+                height: 30,
+              ),
             ],
           ),
         ),

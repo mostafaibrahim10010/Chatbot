@@ -7,14 +7,12 @@ import '../Utils/main_variables.dart';
 class HomeButton extends StatelessWidget {
   const HomeButton(
       {Key? key,
-      required this.iconPath,
       required this.title,
-      required this.link})
+      required this.screen})
       : super(key: key);
 
-  final String iconPath;
   final String title;
-  final String link;
+  final Widget screen;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +20,11 @@ class HomeButton extends StatelessWidget {
       height: 100,
       width: 160,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) =>
+              screen));
+        },
         style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.only(left: 1),
             shape: RoundedRectangleBorder(

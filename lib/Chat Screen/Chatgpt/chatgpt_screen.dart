@@ -6,14 +6,14 @@ import 'package:hexcolor/hexcolor.dart';
 
 import '../../Utils/main_variables.dart';
 
-class ChatPage extends StatefulWidget {
-  const ChatPage({super.key});
+class ChatGPTScreen extends StatefulWidget {
+  const ChatGPTScreen({super.key});
 
   @override
-  State<ChatPage> createState() => _ChatPageState();
+  State<ChatGPTScreen> createState() => _ChatGPTScreenState();
 }
 
-class _ChatPageState extends State<ChatPage> {
+class _ChatGPTScreenState extends State<ChatGPTScreen> {
   final _openAI = OpenAI.instance.build(
     token: OPENAI_API_KEY,
     baseOption: HttpSetup(
